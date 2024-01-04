@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: myapp-argo
-  replicas: 2
+  replicas: 4
   template:
     metadata:
       labels:
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: myapp-argo
-        image: vishalmv6/my_first_image:1.0
+        image: vishalmv6/my_first_image:1.1
         ports:
         - containerPort: 8080
